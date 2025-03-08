@@ -22,10 +22,12 @@ let Hashtags = () => {
       Post Description: {${disc}}
       
       Instructions:
-      If description is provided unappropriate, politely and interactively ask the user to 'describe the post' ended by double (,,).
+      If description is provided empty, politely and interactively ask the user to 'describe the post' ended by double (,,).
       
       The hashtags must be relevant, popular, and engagement-boosting.
       
+      Do not include captions, generate only hashtags.
+
       Use a mix of broad and niche-specific hashtags.
       
       Do not include spaces; hashtags must be in camelCase or lowercase (e.g., #InstaVibes, #travelgoals).
