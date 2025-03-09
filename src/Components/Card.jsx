@@ -10,8 +10,8 @@ let Card = (props) => {
 
   return (
     <>
-      <div className="sFont bg-zinc-300 p-3 rounded mb-5 flex items-center justify-between">
-          <div id="icon" className="m-4 active:bg-black p-1 rounded bg-zinc-600 stroke-white active:stroke-white order-2 " onClick={handleCopy}>
+      <div className="sFont bg-zinc-300 p-0 rounded mb-5 flex items-center justify-between sm:p-3">
+          <div id="icon" className="m-4 active:bg-black p-1 rounded bg-zinc-600 stroke-white active:stroke-white order-2 active:motion-preset-pop motion-duration-100" onClick={handleCopy}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -6,11 +6,11 @@ let Nav = () => {
     <>
       <div className="flex justify-around">
         <NavLink
-          to="/captions"
+          to="/"
           className={({ isActive }) => {
             return `${
-              isActive ? "bgColor text-white" : "bg-zinc-200 text-black"
-            } active:bg-black active:text-white px-6 py-2 rounded pFont`;
+              isActive ? "bg-purple-900 text-white" : "bg-zinc-200 text-black"
+            } active:bg-black active:text-white px-6 py-2 rounded pFont active:motion-preset-pop motion-duration-100`;
           }}
         >
           Captions
@@ -20,8 +20,8 @@ let Nav = () => {
           to="/hashtags"
           className={({ isActive }) =>
             `${
-              isActive ? "bgColor text-white" : "bg-zinc-200 text-black"
-            } active:bg-black active:text-white  px-6 py-2 rounded pFont`
+              isActive ? "bg-purple-900 text-white" : "bg-zinc-200 text-black"
+            } active:bg-black active:text-white  px-6 py-2 rounded pFont active:motion-preset-pop motion-duration-100`
           }
         >
           Hashtags
