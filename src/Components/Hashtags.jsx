@@ -5,10 +5,10 @@ let Hashtags = () => {
   // States
   let [finalData, setFinalData] = useState([
     "Enter keywords or post description",
-    "Click 'Generate Hashtags'",
+    "Click on the Generate button",
     "Copy relevant hashtags",
     "Paste into your post or comment",
-    "Publish and engage"
+    "Publish your post and engage with your audience",
   ]);
   let [disc, setDisc] = useState("");
   let [loader, setLoader] = useState(false);
@@ -50,7 +50,9 @@ let Hashtags = () => {
       let fData = data.message.content
         .split(",,")
         .splice(0, data.message.content.split(",,").length - 1);
-      for(let i of fData) {console.log(i);}
+      for (let i of fData) {
+        console.log(i);
+      }
       setFinalData(fData);
     } catch (e) {
       console.warn(e);
@@ -76,7 +78,7 @@ let Hashtags = () => {
             name=""
             id="postDis"
             placeholder="Describe Your Post"
-            className="border-2 borderColor outline-none px-4 py-2 pFont rounded-md w-full"
+            className="border-2 border-purple-900 outline-none px-4 py-2 pFont rounded-md w-full"
             value={disc}
             onChange={(e) => {
               setDisc(() => e.target.value);
